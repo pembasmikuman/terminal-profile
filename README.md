@@ -11,29 +11,15 @@ For the scripts to work, I think these are the bare minimum requirements.
 
 ```bash
 # Update your software repositories.
-sudo apt-get update
-sudo apt-get upgrade
+sudo pacman -Syu
 
 # Install Git.
-sudo apt-get install -y git
+sudo pacman -S --noconfirm git
 
-# Install Vim.
-sudo apt-get install -y vim
 ```
 
 # Installation
 
-### Powerline (and fonts)
-
-First, we'll install the font (RobotoMono for Powerline). I'll also install it into VIM, since that
-is my built-in editor of choice (but you don't have to use it).
-
-The Powerline fonts also include special characters (like Git branches) that we will use later in
-the terminal profile theme.
-
-```bash
-./install_powerline.sh
-```
 
 ### ZSH, OhMyZSH and Plugins
 
@@ -90,14 +76,6 @@ sudo apt-get install neofetch
 # I override the colors because the default red is kinda ugly in this theme.
 neofetch --ascii_colors 6 7 --colors 2 2 2 2
 ```
-
-## How do I reset the changes back to the old terminal?
-
-There's two main modifications being done to the terminal. The terminal theme, and the shell itself.
-
-For the theme, here's a thread I found on the internet on how to reset it to the default: https://askubuntu.com/questions/14487/how-to-reset-the-terminal-properties-and-preferences
-
-For the terminal shell itself, we actually installed a new terminal (zsh) alongside the default bash. Bash itself wasn't removed, but we just set the default shell to `zsh`. Here is a thread on how to uninstall zsh and default back to bash: https://askubuntu.com/questions/958120/remove-zsh-from-ubuntu-16-04
 
 ## Sources
 
