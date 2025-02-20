@@ -2,7 +2,7 @@
 
 ![terminal](./terminal_screenshot.png)
 
-This is my profile for UNIX (MacOS/Linux) terminals. For Arch, I just use the gnome-terminal
+This is my profile for my gnome-terminal on Arch. Forked from Pixegami repo's.
 app.
 
 # Prerequisites
