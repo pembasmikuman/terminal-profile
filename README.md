@@ -70,7 +70,7 @@ dconf dump /org/gnome/terminal/legacy/profiles:/ > gnome-terminal-profiles.dconf
 How to display terminal information (I use [Neofetch](https://github.com/dylanaraps/neofetch)).
 
 ```bash
-sudo apt-get install neofetch
+sudo pacman -S --noconfirm neofetch
 
 # Display the profile
 # I override the colors because the default red is kinda ugly in this theme.
